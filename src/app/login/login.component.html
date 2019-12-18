@@ -1,0 +1,43 @@
+<div class="container-fluid ">
+  <div class="row ">
+    <div class="col-xl-8 offset-2">
+      <div class="card card-signin bgimg o-hidden border-0 mx-5 shadow-lg my-5" style="border-radius: 1rem;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-xl-8 offset-2">
+              <div class="py-5">
+                <div class="text-center">
+                  <h1 class="font-weight-bold h4 text-white mb-4">Welcome Back!</h1>
+                </div>
+                <form class="user">
+                  <div class="form-group">
+                    <input type="email" style="border-radius: 1rem;" [(ngModel)]="email" name="email" class="form-control form-control-user "
+                      id="inputEmail" placeholder="Enter Email Address...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" style="border-radius: 1rem;" [(ngModel)]="password" name="password" class="form-control form-control-user "
+                      id="inputPassword" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox small">
+                      <input type="checkbox" class="custom-control-input" id="customCheck">
+                      <label class="font-weight-bold text-center custom-control-label text-white" for="customCheck">Remember
+                        Me</label>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary btn-user btn-block w-25 font-weight-bold text-white" (click)="login()"
+                    style="border-radius: 1rem;">
+                    Login
+                  </a>
+                </form>
+                <hr>
+                <div class="text-center">
+                  <a class="medium text-white font-weight-bold" href="forgot-password.html">Forgot Password?</a>
+                </div>
+                <div class="text-center">
+                  <a class="medium text-white font-weight-bold" [routerLink]="['register']">Create an Account</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
